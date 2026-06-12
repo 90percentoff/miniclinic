@@ -40,12 +40,13 @@ public class AppointmentController {
 
     // POST：接收表單
     @PostMapping("/appointment/new")
-    public String submitAppointment(
-            @Valid @ModelAttribute AppointmentForm form,
+        public String submitAppointment(
+            @Valid @ModelAttribute("form") AppointmentForm form,
             BindingResult result,
             Model model) {
 
         if (result.hasErrors()) {
+            model.addAttribute("form", form);
             model.addAttribute("doctors", doctorRepo.findAll());
             return "appointment-new";
         }
