@@ -7,7 +7,7 @@ MiniClinic 是一個教學用的簡易診所管理系統，包含醫師、病患
 
 線上 Demo
 ---
-https://miniclinic-<yourname>.onrender.com
+https://miniclinic-pf0a.onrender.com
 
 技術棧
 ---
