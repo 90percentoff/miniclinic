@@ -31,6 +31,7 @@
 
     <div th:if="${error}" class="error" th:text="${error}"></div>
 
+    <div th:if="${form != null}">
     <form th:action="@{/appointment/new}" th:object="${form}" method="post">
 
         <div class="field">
@@ -70,5 +71,9 @@
 
         <button type="submit">送出掛號</button>
     </form>
+    </div>
+    <div th:if="${form == null}">
+        <p>表單尚未初始化，請稍後再試。</p>
+    </div>
 </body>
 </html>
