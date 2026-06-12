@@ -20,3 +20,6 @@ INSERT INTO appointment (appt_id, chart_no, doctor_id, appt_date, time_slot, sta
     (5, 'TEST00002', 'D005', '2026-05-03', 'AM', 'BOOKED'),
     (6, 'TEST00003', 'D001', '2026-05-03', 'PM', 'BOOKED')
 ON CONFLICT (appt_id) DO NOTHING;
+
+-- Ensure the appointment ID sequence is advanced past the seeded max id
+SELECT setval(pg_get_serial_sequence('appointment','appt_id'), (SELECT COALESCE(MAX(appt_id), 0) FROM appointment), true);
