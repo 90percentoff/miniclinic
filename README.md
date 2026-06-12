@@ -3,11 +3,11 @@ MiniClinic
 
 簡介
 ---
-MiniClinic 是一個教學用的簡易診所管理系統，包含醫師、病患與掛號功能，支援本機 SQLite（dev profile）與生產 PostgreSQL（prod profile）。
+MiniClinic 是一個教學用的簡易診所管理系統，包含醫師、病患、掛號、看診完成與統計摘要 API。專案使用 Spring Profiles 區分環境：dev 以 SQLite 開發，prod 以 PostgreSQL 部署到 Render。
 
 線上 Demo
 ---
-（部署完成後填入 Render URL，例如：https://miniclinic-<yourname>.onrender.com ）
+https://miniclinic-<yourname>.onrender.com
 
 技術棧
 ---
