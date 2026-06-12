@@ -1,3 +1,48 @@
+# Maven build output
+target/
+
+# Compiled class files
+**/*.class
+
+# IDE files
+.idea/
+.vscode/
+*.iml
+.project
+.classpath
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Database files
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+
+# Local response previews
+resp.html
+login_resp.html
+
+# Generated sources
+/generated-sources/
+/generated-test-sources/
+
+# Environment and secrets
+.env
+
+# Temp
+tmp/
+*.tmp
+
+# Do NOT ignore Maven wrapper and .mvn directory (needed for builds)
+# mvnw
+# mvnw.cmd
+# .mvn/
 HELP.md
 target/
 .mvn/wrapper/maven-wrapper.jar
